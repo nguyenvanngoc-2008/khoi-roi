@@ -33,7 +33,7 @@ class Blocks:
         self.y = y
         self.index = index
         self.shape = SHAPES[index]
-        self.xoay = 0
+        self.xoay1 = 0
 
     def xoay(self):
         self.shape = [list(row) for row in zip(*self.shape[::-1])]
@@ -172,3 +172,4 @@ if __name__ == "__main__":
     print("Nhấn phím bất kỳ để bắt đầu...")
     msvcrt.getch()
     game_loop()
+
